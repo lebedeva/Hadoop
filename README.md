@@ -33,12 +33,17 @@ Oracle NoSQL Database – база данных типа NoSQL (key-value)
 6.Параллельное сканирование                   |6.Индексный доступ </br>
 7.Нет структуры                               |7.Простая модель данных </br>
 8.Последовательное чтение                     |8.Произвольный доступ</br>
-9.select /*+ FULL(tab) */                      9.select /*+ index(tab tab_i) */ </br>
-sum(tab.a),b                                    *</br>
-from big_table tab                              from big_table tab</br>
-where                                           where</br>
-….                                              pk_col=123</br>
-group by b                                        </br>
+9.select /*+ FULL(tab) */                       
+sum(tab.a),b                                    
+from big_table tab                              
+where                                           
+….                                              
+group by b <br/>
+
+9.select /*+ index(tab tab_i) */ *
+from big_table tab
+where
+pk_col=123
 
 # Что такое Hadoop?
 Hadoop это:</br>
