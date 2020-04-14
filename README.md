@@ -23,22 +23,22 @@ Hadoop = распределенная файловая система + MapReduc
 Oracle NoSQL Database – база данных типа NoSQL (key-value)
 
 # Сухая выжимка
-<b>Hadoop Distributed File System (HDFS)</b>  |<b>Oracle NoSQL Database</b>
-1.Пакетная обработка                          |1.Real-Time
-2.Подготавливает данные для дальнейшего       |2.Предоставляет сервис (frontend) 
-использования (backend)                       |
-3.Пакетные запросы                            |3.Быстрый доступ к конкретной строке
-4.Один раз записано, читается многократно     |4.Read, write, delete update
-5.Файловая система                            |5.База данных
-6.Параллельное сканирование                   |6.Индексный доступ
-7.Нет структуры                               |7.Простая модель данных
-8.Последовательное чтение                     |8.Произвольный доступ
-9.select /*+ FULL(tab) */                      9.select /*+ index(tab tab_i) */ 
-sum(tab.a),b                                    *
-from big_table tab                              from big_table tab
-where                                           where
-….                                              pk_col=123
-group by b
+<b>Hadoop Distributed File System (HDFS)</b>  |<b>Oracle NoSQL Database</b> </br>
+1.Пакетная обработка                          |1.Real-Time </br>
+2.Подготавливает данные для дальнейшего       |2.Предоставляет сервис (frontend) </br>
+использования (backend)                       |</br>
+3.Пакетные запросы                            |3.Быстрый доступ к конкретной строке </br>
+4.Один раз записано, читается многократно     |4.Read, write, delete update </br>
+5.Файловая система                            |5.База данных </br>
+6.Параллельное сканирование                   |6.Индексный доступ </br>
+7.Нет структуры                               |7.Простая модель данных </br>
+8.Последовательное чтение                     |8.Произвольный доступ</br>
+9.select /*+ FULL(tab) */                      9.select /*+ index(tab tab_i) */ </br>
+sum(tab.a),b                                    *</br>
+from big_table tab                              from big_table tab</br>
+where                                           where</br>
+….                                              pk_col=123</br>
+group by b                                        </br>
 
 # Что такое Hadoop?
 Hadoop это:</br>
